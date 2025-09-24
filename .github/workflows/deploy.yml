@@ -5,6 +5,10 @@ on:
     branches:
       - main   # Deploy only when pushing to main
 
+permissions:
+  contents: write
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
