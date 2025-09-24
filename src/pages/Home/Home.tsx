@@ -53,6 +53,7 @@ export default function Home() {
         <div
           className="perspective relative w-48 h-48 m-6 md:w-64 md:h-64 md:m-10 cursor-pointer"
           onMouseEnter={handleHover}
+          onClick={handleHover}
         >
           <div
             className={`relative w-full h-full rounded-full transition-transform duration-600 transform-style preserve-3d ${
