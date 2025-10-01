@@ -120,7 +120,7 @@ export default function Home() {
           href="/Gerald_Pamintuan_CV.pdf" // <-- Put your CV file in /public folder
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block px-6 py-3 bg-primary text-white font-semibold rounded-xl shadow-md hover:bg-primary/90 transition"
+          className="inline-block px-6 py-5 bg-primary text-white font-semibold rounded-xl shadow-md hover:bg-primary/90 transition"
         >
           View CV
         </a>
