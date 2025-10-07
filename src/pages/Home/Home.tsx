@@ -115,15 +115,25 @@ export default function Home() {
           ))}
         </div> */}
 
-      {/* View CV Button */}
+      {/* View & Download CV Buttons */}
+      <div className="flex gap-4 justify-center my-4">
         <a
-          href="/Gerald_Pamintuan_CV.pdf" // <-- Put your CV file in /public folder
+          href="/my-portfolio/Gerald_Pamintuan_CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block px-6 py-5 bg-primary text-white font-semibold rounded-xl shadow-md hover:bg-primary/90 transition"
+          className="inline-block px-8 py-3 bg-primary text-white font-semibold rounded-xl shadow-md hover:bg-primary/90 transition"
         >
           View CV
         </a>
+        <a
+          href="/my-portfolio/Gerald_Pamintuan_CV.pdf"
+          download="Gerald_Pamintuan_CV.pdf"
+          className="download-cv-btn px-8 py-3 font-semibold rounded-xl shadow-md"
+        >
+          <span>Download CV</span>
+          <span className="progress-bg"></span>
+        </a>
+      </div>
 
       {/* Social links */}
       <div className="flex gap-4 justify-center mt-4">

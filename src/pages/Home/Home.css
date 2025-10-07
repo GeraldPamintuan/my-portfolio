@@ -53,4 +53,36 @@
 @keyframes blink { 0%, 50%, 100% { opacity: 1 } 25%, 75% { opacity: 0 } }
 .animate-blink { animation: blink 1s step-end infinite; }
 
+.download-cv-btn {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  color: #7c3aed; /* Tailwind's secondary color, adjust as needed */
+  border: 1px solid #7c3aed;
+  transition: color 0.3s;
+}
 
+.download-cv-btn .progress-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #7c3aed 0%, #a78bfa 100%);
+  z-index: 1;
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.download-cv-btn:hover .progress-bg {
+  width: 100%;
+}
+
+.download-cv-btn span {
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s;
+}
+
+.download-cv-btn:hover span {
+  color: #fff;
+}

@@ -22,7 +22,7 @@ const TypewriterEffect: React.FC<TypewriterEffectProps> = ({ text }) => {
       } else {
         clearInterval(timer);
       }
-    }, 260);
+    }, 200);
 
     return () => clearInterval(timer);
   }, [text]);
@@ -141,20 +141,20 @@ const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onLoadingComplete }) => {
                 variants={childVariants}
               >
                 <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold space-y-2 sm:space-y-4">
-                  <div className="mb-2 sm:mb-4">
+                  {/* <div className="mb-2 sm:mb-4">
                     <span
                       data-aos="fade-right"
                       data-aos-delay="200"
                       className="inline-block px-2 bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent"
                     >
-                      Welcome
+                      My
                     </span>{' '}
                     <span
                       data-aos="fade-right"
                       data-aos-delay="400"
                       className="inline-block px-2 bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent"
                     >
-                      To
+                      Portfolio
                     </span>{' '}
                     <span
                       data-aos="fade-right"
@@ -163,21 +163,22 @@ const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onLoadingComplete }) => {
                     >
                       My
                     </span>
-                  </div>
+                  </div> */}
+
                   <div>
                     <span
                       data-aos="fade-up"
                       data-aos-delay="800"
                       className="inline-block px-2 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent"
                     >
-                      Portfolio
+                      My
                     </span>{' '}
                     <span
                       data-aos="fade-up"
                       data-aos-delay="1000"
                       className="inline-block px-2 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent"
                     >
-                      Website
+                      Portfolio
                     </span>
                   </div>
                 </h1>
